@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation files('libs/nbt-5.5.jar')
+    compile group: 'org.json', name: 'json', version: '20200518'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0-M1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0-M1'
+    //Refference: https://junit.org/junit5/docs/current/user-guide/#running-tests-build-gradle-engines-configure
+}
+
+//Application Configuration
+mainClassName = 'mcaprocessor.App'
+jar 
+{
+    archiveBaseName = 'MCAProcessor'
+    archiveVersion =  '1.0'
+
+    manifest
+    {
+        attributes 'Main-Class': mainClassName
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+//Task: Run
+defaultTasks 'run'
