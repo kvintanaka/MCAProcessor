@@ -9,7 +9,7 @@ Extract properties from MCA Formatted File (contain several NBTs inside)
 
 # Implemented Features
 - Scan for books from the entire world and output it into a JSON format
-- Implemented NBT Library <Source: github.com/Quertz/NBT>
+- Implemented NBT Library <Source: https://github.com/Querz/NBT>
 
 ##### Tested on Ubuntu 20.04 LTS
 
