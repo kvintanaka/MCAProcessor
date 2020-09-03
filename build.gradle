@@ -16,7 +16,7 @@ dependencies {
 }
 
 //Application Configuration
-mainClassName = 'mcaprocessor.App'
+mainClassName = 'com.kvintanaka.mcaprocessor.App'
 jar 
 {
     archiveBaseName = 'MCAProcessor'
